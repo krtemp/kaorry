@@ -1,0 +1,131 @@
+/*YHK*/
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Ropa+Sans);
+
+.p_title{
+	text-align:center;
+}
+.p_title .title{
+	padding:0 10px;
+	display:block;
+	text-align:center;
+	margin:0 auto;
+	position: relative;
+	font-size: 24px;
+	letter-spacing: 2px;
+	line-height:36px;
+}
+
+.p_title .con{
+	font-size: 14px;
+	line-height:24px;
+	opacity:0.7;
+	margin-top:6px;
+	display:block;
+	padding:0 10px;
+}
+
+.p_title .con.co,.p_title .con.co a{
+	opacity:1;
+	color:#fff;
+}
+.p_title .con.co a{
+	text-decoration: underline;
+}
+
+.p_inner{
+	display: flex;
+	flex-wrap: wrap;
+	background:#eee;
+}
+
+.p_inner_con{
+	width:50%;
+	overflow:hidden;
+	text-align:center;
+}
+
+.p_inner_con.wild{
+	width:100%;
+}
+
+
+.p_inner_con img{
+	width:100%;
+	max-width:1020px;
+	height:100%;
+	/*max-height:680px;*/
+	object-fit: contain;
+}
+
+.p_inner_con.full{
+	width:100%;
+	position: relative;
+	height:calc(100vw * 0.45);
+}
+.p_inner_con.full.full-s{
+	height:calc(100vw * 0.35);
+}
+.p_inner_con.full img{
+	width:100%;
+	max-width:none;
+	height:100%;
+	max-height:none;
+	object-fit: cover;
+}
+
+.p_inner_b{
+	max-width:1920px;
+	padding:40px 20px;
+	margin:0 auto;
+}
+.p_inner_b .one-gallery {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.p_inner_b .one-gallery .gallery-pic {
+    background: #ccc;
+    display: block;
+    transition: 0.2s;
+}
+.p_inner_b .one-gallery .gallery-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.2s;
+}
+.p_inner_b .one-gallery .gallery-pic:hover img {
+    filter: brightness(50%);
+}
+
+.page_back{
+	color:#fff;
+	font-size:20px;
+}
+
+.page_back i{margin-right:8px;}
+
+@media screen and (max-width: 768px){
+	.p_inner_con{
+		width:100%;
+	}
+
+	.page_back{
+		font-size:16px;
+	}
+
+	.p_title .title{
+		font-size:20px;
+		line-height:30px;
+		padding:0 5px;
+	}
+
+	.p_title .con{
+		font-size:13px;
+		line-height:20px;
+		padding:0 5px;
+	}
+	
+}
